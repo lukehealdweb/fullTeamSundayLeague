@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #2DA9E1;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "section1";
+}
+.section1{
+    grid-area: section1;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/background7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sunday{
+    font-family: 'Abel', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+}
+#logoTop{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    width: 25em;
+}
+.container{
+    text-align: center;
+    margin-top: 7em;
+}
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 650px;
+    padding: 20px 20px;
+    margin: 15px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 7px;
+    -webkit-transition: box-shadow linear 0.5s;
+    transition: box-shadow linear 0.5s;
+}
+
+input[type=email]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2DA9E1;
+    box-shadow: 0 0 10px #2DA9E1;
+}
+
+input[type=password]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2DA9E1;
+    box-shadow: 0 0 10px #2DA9E1;
+}
+
+input[type=text]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2DA9E1;
+    box-shadow: 0 0 10px #2DA9E1;
+}
+button{
+    background-color: #2DA9E1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 150px;
+    padding: 1em;
+    margin-top: 3em;
+    box-sizing: border-box;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: rgb(54, 175, 231);
+}
+#newMember {
+    font-family: 'Abel', sans-serif;
+    color: white;
+    padding-top: 1em;
+    text-align: center;
+    font-size: 15px;
+}
+
+.gridHome{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "section1Home"
+    "section2Home";
+}
+.section1Home{
+    height: 5em;
+    background-color: #2c2d6b;
+}
+.section2Home{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#welcome{
+    text-align: center;
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+#username{
+    float: right;
+    color: white;
+    padding: 10px;
+    margin-right: 1em;
+    font-family: 'Abel', sans-serif;
+}
+#errorMessage {
+    text-align: center;
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+@media only screen and (max-width: 760px) {
+    input[type=text],
+    input[type=email],
+    input[type=password] {
+        width: 350px;
+        padding: 20px 20px;
+        margin: 15px 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 7px;
+        -webkit-transition: box-shadow linear 0.5s;
+        transition: box-shadow linear 0.5s;
+    }
+    #logoTop{
+        width: 20em;
+    }
+    #username{
+        float: right;
+        color: white;
+        padding: 1em;
+        margin-right: 1em;
+        font-family: 'Abel', sans-serif;
+        font-size: 1em;
+        ;
+    }
+}
